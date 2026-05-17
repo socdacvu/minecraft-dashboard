@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120" role="img" aria-label="NovaMC logo">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8f0ff"/><stop offset=".55" stop-color="#00d4ff"/><stop offset="1" stop-color="#0a3a6e"/></linearGradient><filter id="f"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <rect width="360" height="120" rx="24" fill="#020b18" opacity=".1"/>
-  <g filter="url(#f)"><path d="M58 68c-20 0-30-9-30-22 0-11 8-19 19-20C52 14 64 8 78 8c17 0 31 10 37 24 12 1 22 11 22 24 0 14-11 24-27 24H58z" fill="url(#g)" opacity=".95"/><text x="150" y="56" font-family="Arial Black,Arial,sans-serif" font-size="38" font-weight="900" fill="#fff" letter-spacing="3">NOVA</text><text x="262" y="56" font-family="Arial Black,Arial,sans-serif" font-size="38" font-weight="900" fill="#00d4ff" letter-spacing="2">MC</text><text x="151" y="83" font-family="Arial,sans-serif" font-size="14" fill="#a8f0ff" letter-spacing="6">NETWORK</text></g>
-</svg>
