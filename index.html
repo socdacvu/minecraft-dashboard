@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaMC | Máy Chủ Minecraft Việt Nam</title>
+  <meta name="description" content="NovaMC - Máy chủ Minecraft sinh tồn vanilla, cộng đồng văn minh và đội ngũ vận hành chuyên nghiệp." />
+  <meta name="theme-color" content="#0EA5E9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+<!-- ====== DAYTIME EFFECTS LAYER ====== -->
+<div class="sky-effects" aria-hidden="true">
+  <div id="cursor-glow"></div>
+  <div id="sun-orb"></div>
+  <div id="sun-rays"></div>
+  <div id="cloud-layer"></div>
+  <div id="particles"></div>
+  <div id="starfield"></div>
+  <div class="shimmer-band"></div>
+</div>
+
+<!-- ====== SIDE RAIL ====== -->
+<aside class="side-rail" id="navbar" aria-label="Điều hướng chính">
+  <a class="brand-stack" href="#hero" aria-label="NovaMC trang chủ">
+    <span class="brand-glyph" data-nav-logo-icon>☁️</span>
+    <span class="brand-name">NOVA<span>MC</span></span>
+    <small>Survival Hub</small>
+  </a>
+  <nav class="rail-menu" id="nav-links">
+    <a href="#album"><span>📸</span><b>Album</b></a>
+    <a href="#info"><span>🌐</span><b>Về Nova</b></a>
+    <a href="#features"><span>✨</span><b>Tính Năng</b></a>
+    <a href="#staff"><span>🛡️</span><b>Đội Ngũ</b></a>
+    <a href="#world"><span>❔</span><b>Hỏi Đáp</b></a>
+    <button type="button" data-modal="connect"><span>📍</span><b>Địa Chỉ</b></button>
+    <button type="button" data-modal="rules"><span>📋</span><b>Luật Lệ</b></button>
+    <button type="button" data-modal="faq"><span>❔</span><b>FAQ</b></button>
+  </nav>
+  <button class="rail-system" type="button" data-modal="system">⚡ Hệ Thống</button>
+</aside>
+
+<!-- ====== MOBILE TOPBAR ====== -->
+<header class="mobile-topbar">
+  <a href="#hero" class="mobile-brand"><span data-mobile-logo>☁️</span> NOVA<span>MC</span></a>
+  <button class="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+</header>
+
+<main>
+  <!-- ====== HERO ====== -->
+  <section id="hero" class="hero-layout">
+    <div class="hero-copy reveal-fast">
+      <div class="hero-kicker"><i></i><span data-hero-badge>MÁY CHỦ MINECRAFT VIỆT NAM</span></div>
+      <h1 class="hero-title">
+        <span data-title-left>NOVA</span><em data-title-right>MC</em>
+      </h1>
+      <p class="hero-sub" data-hero-sub>Kết Nối Người Chơi - Xây Dựng Thế Giới</p>
+      <p class="hero-desc" data-hero-desc>Chào mừng đến với NovaMC.</p>
+      <div class="hero-actions" data-hero-buttons></div>
+
+    </div>
+
+    <div class="sky-console reveal-fast rd1">
+      <div class="console-orbit"></div>
+      <div class="allay-pod">
+        <img src="./assets/novamc-main.png" class="novamc-main-art" alt="NovaMC" />
+        <span id="hero-allay">🦋</span>
+      </div>
+      <div class="console-card status-card">
+        <small>TRẠNG THÁI</small>
+        <strong class="status-live"><i aria-hidden="true"></i><span data-status-state>TRỰC TUYẾN</span></strong>
+        <span class="status-note">Máy chủ đang sẵn sàng</span>
+      </div>
+      <div class="console-card player-card">
+        <small>NGƯỜI CHƠI</small>
+        <strong id="pcnt">Chưa cập nhật</strong>
+        <span class="player-note"><i class="player-dot" aria-hidden="true"></i><span data-player-subtext>đang online</span></span>
+      </div>
+      <div class="console-card ping-card">
+        <small>ĐỘ TRỄ</small>
+        <strong id="ping">13ms</strong>
+        <span class="ping-note" data-ping-subtext>kết nối ổn định</span>
+        <div class="signal-row ping-signal" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ====== SECTION 01 — ALBUM ẢNH SERVER ====== -->
+  <section id="album" class="section-frame gallery-section">
+    <div class="section-label reveal"><span>01</span><b>ALBUM SERVER</b></div>
+    <div class="split-head gallery-head reveal">
+      <h2>Album Ảnh<br/>NovaMC</h2>
+      <p>Lưu lại những khoảnh khắc đẹp của server: khu spawn, công trình, sinh tồn, sự kiện và các hoạt động cộng đồng. Người truy cập có thể chuyển ảnh ngay trên website.</p>
+    </div>
+    <div class="gallery-shell reveal rd1" data-gallery></div>
+  </section>
+
+  <!-- ====== SECTION 02 — THÔNG TIN VỀ NOVAMC ====== -->
+  <section id="info" class="section-frame info-section">
+    <div class="section-label reveal"><span>02</span><b>THÔNG TIN VỀ NOVAMC</b></div>
+    <div class="split-head reveal">
+      <h2>Thông Tin Về<br/>NovaMC</h2>
+      <p data-info-intro>Khám phá hệ sinh thái NovaMC: nền tảng, gameplay, cộng đồng và đội ngũ vận hành. Nhấn vào từng thẻ để xem đầy đủ thông tin chi tiết.</p>
+    </div>
+    <div class="info-bento" data-info-grid></div>
+  </section>
+
+  <!-- ====== SECTION 03 — TÍNH NĂNG NỔI BẬT ====== -->
+  <section id="features" class="section-frame features-section">
+    <div class="section-label reveal"><span>03</span><b>TÍNH NĂNG</b></div>
+    <div class="feature-intro reveal">
+      <h2>Tính Năng Nổi Bật</h2>
+      <p data-features-intro>NovaMC tập trung vào trải nghiệm sinh tồn vanilla, nhịp chơi thoải mái, xây dựng sáng tạo và môi trường cộng đồng tích cực.</p>
+    </div>
+    <div class="feature-showcase reveal rd1" data-feature-showcase></div>
+  </section>
+
+  <!-- ====== SECTION 04 — ĐỘI NGŨ (3 ROWS) ====== -->
+  <section id="staff" class="section-frame staff-section">
+    <div class="section-label reveal"><span>04</span><b>ĐỘI NGŨ</b></div>
+    <div class="staff-top">
+      <div class="staff-story reveal">
+        <h2 data-staff-title>Đội Ngũ Vận Hành NovaMC</h2>
+        <p data-staff-desc>Đội ngũ vận hành máy chủ gồm Owner, Admin, Moderator, Helper, Developer và Builder, cùng phối hợp để duy trì môi trường chơi ổn định và văn minh.</p>
+        <div data-owner-wrap></div>
+      </div>
+      <div class="staff-rows-panel reveal rd1">
+        <div class="crew-title" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;font-family:var(--font-head);font-weight:800;text-transform:uppercase;letter-spacing:1.4px">
+          <span class="staff-row-title">Đội Ngũ Đang Vận Hành</span>
+          <b class="staff-row-sub">Owner · Admin · Staff</b>
+        </div>
+
+        <!-- ROW 1: ADMIN -->
+        <div class="staff-row-block srow-admin">
+          <div class="staff-row-header">
+            <div class="srow-badge">👑 Admin — Điều Hành</div>
+            <div class="srow-line"></div>
+          </div>
+          <div class="staff-scroll-wrap">
+            <div class="staff-track-day dir-l" id="staff-track-admin"></div>
+          </div>
+        </div>
+
+        <!-- ROW 2: HELPER + STAFF + DEV -->
+        <div class="staff-row-block srow-mid">
+          <div class="staff-row-header">
+            <div class="srow-badge">💜 Moderator · Helper · Developer</div>
+            <div class="srow-line"></div>
+          </div>
+          <div class="staff-scroll-wrap">
+            <div class="staff-track-day dir-r" id="staff-track-mid"></div>
+          </div>
+        </div>
+
+        <!-- ROW 3: OTHER ROLES -->
+        <div class="staff-row-block srow-other">
+          <div class="staff-row-header">
+            <div class="srow-badge">🔨 Builder · Hỗ Trợ Khác</div>
+            <div class="srow-line"></div>
+          </div>
+          <div class="staff-scroll-wrap">
+            <div class="staff-track-day dir-l" id="staff-track-other"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 05 — HỖ TRỢ / FAQ ====== -->
+  <section id="world" class="section-frame support-faq-section">
+    <div class="support-faq-art" aria-hidden="true">
+      <span class="support-mote mote-a"></span>
+      <span class="support-mote mote-b"></span>
+      <span class="support-mote mote-c"></span>
+    </div>
+
+    <div class="support-faq-shell">
+      <div class="support-faq-copy reveal">
+        <div class="section-label dark-label"><span>05</span><b>TRUNG TÂM HỖ TRỢ</b></div>
+        <h2>Câu hỏi thường gặp</h2>
+        <p>Những thông tin quan trọng nhất được gom lại tại đây để bạn tham gia NovaMC nhanh hơn, rõ ràng hơn và hạn chế gặp lỗi khi kết nối.</p>
+
+        <div class="support-actions">
+          <button type="button" class="support-btn primary" data-modal="rules">📋 Xem luật lệ</button>
+          <button type="button" class="support-btn ghost" data-modal="connect">📍 Địa chỉ server</button>
+        </div>
+      </div>
+
+      <div class="support-faq-list reveal" data-inline-faq-list aria-label="Câu hỏi thường gặp NovaMC"></div>
+    </div>
+
+    <div class="support-discord-strip reveal">
+      <div>
+        <strong>Vẫn cần hỗ trợ thêm?</strong>
+        <span>Tham gia Discord NovaMC để tạo ticket, nhận thông báo sự kiện và cập nhật mới nhất.</span>
+      </div>
+      <a class="discord-join-btn" href="#">💬 Tham gia Discord</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-cloud footer-novamc">
+  <div class="footer-shell">
+    <div class="footer-main">
+      <section class="footer-col footer-about" aria-label="Thông tin NovaMC">
+        <a class="footer-logo" href="#hero" aria-label="NovaMC Trang Chủ">
+          <span class="footer-logo-mark">☁️</span>
+          <span>NOVA<b>MC</b></span>
+        </a>
+        <p class="footer-kicker" data-footer-tagline>KẾT NỐI ĐAM MÊ</p>
+        <p class="footer-desc">Máy chủ Minecraft Việt Nam hướng đến cộng đồng văn minh, sinh tồn gần gốc và trải nghiệm công bằng cho mọi người chơi.</p>
+        <div class="footer-socials footer-social-grid" data-socials aria-label="Mạng xã hội NovaMC"></div>
+      </section>
+
+      <nav class="footer-col footer-nav" aria-label="Điều hướng nhanh">
+        <h3>Điều hướng</h3>
+        <a href="#hero">Trang Chủ</a>
+        <a href="#album">Album</a>
+        <a href="#info">Về Nova</a>
+        <a href="#features">Tính Năng</a>
+      </nav>
+
+      <nav class="footer-col footer-nav" aria-label="Cộng đồng NovaMC">
+        <h3>Cộng đồng</h3>
+        <a href="#staff">Đội Ngũ</a>
+        <a href="#" data-modal="rules">Luật Lệ</a>
+        <a href="#" data-modal="connect">Địa Chỉ</a>
+        <a href="#world">Hỏi Đáp</a>
+      </nav>
+
+      <section class="footer-col footer-community" aria-label="Kết nối NovaMC">
+        <h3>Kết nối NovaMC</h3>
+        <div class="footer-community-card">
+          <div class="footer-community-icon">💬</div>
+          <div>
+            <strong>Tham gia cộng đồng</strong>
+            <span>Nhận thông báo, sự kiện và hỗ trợ nhanh qua Discord.</span>
+          </div>
+        </div>
+        <a class="footer-discord-btn" href="#">Tham gia Discord</a>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy" data-copyright></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== MODALS ====== -->
+<div class="modal-ov" id="connect-modal" aria-hidden="true">
+  <div class="modal-box">
+    <div class="modal-hdr">
+      <div class="modal-ttl-wrap"><div class="modal-ico">📍</div><div><div class="modal-ttl">ĐỊA CHỈ KẾT NỐI</div><div class="modal-sub">NOVAMC CONNECTION HUB</div></div></div>
+      <button class="modal-close" type="button" data-close="connect">✕</button>
+    </div>
+    <div class="modal-body connection-hub-body">
+      <section class="connection-intro-card">
+        <div>
+          <span class="connection-eyebrow">Thông tin máy chủ</span>
+          <h3>Kết nối NovaMC nhanh và chính xác</h3>
+          <p>Chọn đúng phiên bản bạn đang chơi, sao chép địa chỉ tương ứng rồi làm theo hướng dẫn bên dưới. Java dùng IP chính, Bedrock/MCPE dùng cùng IP và thêm port.</p>
+        </div>
+        <div class="connection-status-pill"><span></span> Server sẵn sàng</div>
+      </section>
+
+      <div class="addr-grid connection-address-grid" data-connection-grid></div>
+
+      <section class="connection-guide-grid" aria-label="Hướng dẫn kết nối NovaMC">
+        <article class="connection-guide-card">
+          <div class="guide-card-head"><span>01</span><strong>Hướng dẫn Java Edition</strong></div>
+          <ol>
+            <li>Mở Minecraft Java Edition phiên bản <b>1.21.5 trở lên</b>.</li>
+            <li>Chọn <b>Multiplayer</b> → <b>Add Server</b>.</li>
+            <li>Nhập Server Address: <b>play.novamc.asia</b>.</li>
+            <li>Bấm <b>Done</b>, chọn NovaMC rồi bấm <b>Join Server</b>.</li>
+          </ol>
+        </article>
+        <article class="connection-guide-card">
+          <div class="guide-card-head"><span>02</span><strong>Hướng dẫn Bedrock / MCPE</strong></div>
+          <ol>
+            <li>Mở Minecraft Bedrock hoặc Minecraft PE.</li>
+            <li>Vào <b>Play</b> → tab <b>Servers</b> → <b>Add Server</b>.</li>
+            <li>Nhập Address: <b>play.novamc.asia</b>.</li>
+            <li>Nhập Port: <b>25552</b>, lưu lại rồi kết nối.</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="connection-help-card">
+        <div class="help-icon">💡</div>
+        <div>
+          <strong>Nếu không kết nối được</strong>
+          <p>Hãy kiểm tra đúng phiên bản, nhập đúng port cho Bedrock/MCPE, thử IP phụ <b>novamc.usga.me:25552</b> hoặc liên hệ Discord NovaMC để được hỗ trợ.</p>
+        </div>
+      </section>
+    </div>
+    <div class="modal-foot">● CLICK VÀO NÚT SAO CHÉP ĐỂ COPY ĐỊA CHỈ • HỖ TRỢ JAVA / BEDROCK / MCPE</div>
+  </div>
+</div>
+
+<div class="modal-ov" id="rules-modal" aria-hidden="true">
+  <div class="modal-box rules-modal-box">
+    <div class="modal-hdr rules-modal-head">
+      <div class="modal-ttl-wrap">
+        <div class="modal-ico">📋</div>
+        <div>
+          <div class="modal-ttl">TRUNG TÂM LUẬT LỆ NOVAMC</div>
+          <div class="modal-sub">Toàn bộ quy định chính thức • Không rút gọn nội dung</div>
+        </div>
+      </div>
+      <button class="modal-close" type="button" data-close="rules">✕</button>
+    </div>
+    <div class="modal-body rules-library">
+      <aside class="rules-sidebar">
+        <div class="rules-sidebar-title">Danh mục luật</div>
+        <div class="rules-sidebar-note" data-rules-summary>Chọn danh mục luật cần xem. Nội dung được hiển thị đầy đủ trong khung bên phải.</div>
+        <div class="rules-category-list" data-rules-categories></div>
+      </aside>
+      <section class="rules-reader" data-rules-reader>
+        <div class="rules-reader-empty">Đang tải nội dung luật NovaMC...</div>
+      </section>
+    </div>
+    <div class="modal-foot" data-rules-version>📋 PHIÊN BẢN: 2026.01 • TRUNG TÂM PHÁP LÝ NOVAMC</div>
+  </div>
+</div>
+
+<div class="modal-ov" id="faq-modal" aria-hidden="true">
+  <div class="modal-box">
+    <div class="modal-hdr"><div class="modal-ttl-wrap"><div class="modal-ico">❔</div><div><div class="modal-ttl">TRUNG TÂM HỎI ĐÁP</div><div class="modal-sub">NOVAMC FAQ CENTER</div></div></div><button class="modal-close" type="button" data-close="faq">✕</button></div>
+    <div class="modal-body"><div class="faq-list" data-faq-list></div></div>
+    <div class="modal-foot">● FAQ CENTER • CẬP NHẬT 2026</div>
+  </div>
+</div>
+
+<div class="modal-ov" id="system-modal" aria-hidden="true">
+  <div class="modal-box">
+    <div class="modal-hdr"><div class="modal-ttl-wrap"><div class="modal-ico">⚡</div><div><div class="modal-ttl">HỆ THỐNG NOVAMC</div><div class="modal-sub">CONTROL PANEL</div></div></div><button class="modal-close" type="button" data-close="system">✕</button></div>
+    <div class="modal-body"><div class="sys-grid"><div class="sys-card"><span>Trạng thái</span><b data-system-state>ONLINE</b></div><div class="sys-card"><span>Người chơi</span><b data-system-players>Chưa cập nhật</b></div><div class="sys-card"><span>Ping</span><b data-system-ping>13ms</b></div></div><div class="quick-links" data-quick-links></div></div>
+    <div class="modal-foot">● NOVAMC SYSTEM • FRONT-END STATUS</div>
+  </div>
+</div>
+
+
+
+<div class="modal-ov" id="feature-detail-modal" aria-hidden="true">
+  <div class="modal-box feature-detail-modal" role="dialog" aria-modal="true" aria-label="Chi tiết tính năng NovaMC">
+    <div class="modal-hdr">
+      <div class="modal-ttl-wrap">
+        <div class="modal-ico">✨</div>
+        <div>
+          <div class="modal-sub">NOVAMC FEATURE DETAIL</div>
+          <div class="modal-ttl">Chi Tiết Tính Năng</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close="feature-detail" aria-label="Đóng">✕</button>
+    </div>
+    <div class="modal-body" data-feature-detail-body></div>
+    <div class="modal-foot">● Dùng mũi tên để chuyển trang • Bấm vào thẻ để xem đầy đủ thông tin</div>
+  </div>
+</div>
+
+<div class="modal-ov" id="staff-detail-modal" aria-hidden="true">
+  <div class="modal-box staff-detail-modal" role="dialog" aria-modal="true" aria-label="Thông tin thành viên NovaMC">
+    <div class="modal-hdr">
+      <div class="modal-ttl-wrap">
+        <div class="modal-ico">🪪</div>
+        <div>
+          <div class="modal-sub">NOVAMC TEAM PROFILE</div>
+          <div class="modal-ttl">Thông Tin Thành Viên</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close="staff-detail" aria-label="Đóng">✕</button>
+    </div>
+    <div class="modal-body" data-staff-detail-body></div>
+    <div class="modal-foot">● Bấm vào các đường link để mở hồ sơ / liên hệ của thành viên</div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Đã copy!</div>
+
+<script src="./config/site.config.js"></script>
+<script src="./config/info.config.js"></script>
+<script src="./config/gameplay.config.js"></script>
+<script src="./config/staff.config.js"></script>
+<script src="./config/gallery.config.js"></script>
+<script src="./config/rules.config.js"></script>
+<script src="./config/faq.config.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
