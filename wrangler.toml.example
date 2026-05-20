@@ -1,0 +1,10 @@
+# Đổi tên file này thành wrangler.toml nếu bạn deploy bằng Wrangler.
+# Nếu deploy bằng Cloudflare Dashboard, bạn chỉ cần tạo KV binding NOVAMC_KV trong Settings > Bindings.
+name = "novamc"
+compatibility_date = "2026-05-20"
+pages_build_output_dir = "."
+
+[[kv_namespaces]]
+binding = "NOVAMC_KV"
+id = "PASTE_KV_NAMESPACE_ID_HERE"
+preview_id = "PASTE_PREVIEW_KV_NAMESPACE_ID_HERE"
